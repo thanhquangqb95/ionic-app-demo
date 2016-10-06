@@ -1,0 +1,53 @@
+/* Empty. Add your own CSS if you like */
+
+
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 20px;
+    color: black;
+    background-color:#FFE1FF;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    
+}
+.Noidung{
+	background-color:#FFE1FF
+}
+
+/* Top */
+.menu-top {
+  height: 40%;
+}
+
+
+/* Phần người dùng */
+.col.col-center{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+/* Ảnh người dùng*/
+.profile-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #546E7A;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.profile-image:hover {
+  border: 3px solid white;
+}
+

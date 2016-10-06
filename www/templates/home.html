@@ -1,0 +1,25 @@
+<ion-view view-title="Trang chủ">
+
+    <ion-content class="home">
+    
+<!-- Tìm kiếm món ăn đê nấu -->
+      <div class="list list-inset form-rb">
+          <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+             <input type="text" class="text-color-contrast" ng-model="searchText" placeholder="Xin chào? Bạn muốn nấu món gi?">
+          </label>
+      </div>
+
+<!--Danh sách món ăn-->   
+      <div class="list">
+          <a ng-repeat="button in buttons|filter:searchText"  class="button button-full " href={{button.href}} >
+              <img ng-src={{button.image}} >
+              <div class="bottomleft" > {{button.name}}</div> 
+            </a> 
+      </div>
+
+  
+
+
+    </ion-content>
+  </ion-view>

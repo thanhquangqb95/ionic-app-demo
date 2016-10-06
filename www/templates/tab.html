@@ -1,0 +1,57 @@
+<!--Side menu-->
+<ion-side-menus enable-menu-with-back-views="false">
+        
+      <ion-side-menu-content>
+          <ion-nav-bar class="bar-stable">
+             <ion-nav-back-button></ion-nav-back-button>
+              <ion-nav-buttons side="left">
+                  <button class="button button-icon button-clear ion-navicon" menu-toggle="left"> </button>
+              </ion-nav-buttons>
+          </ion-nav-bar>
+
+ <!-- Các tabs của ứng ụng-->
+        
+      <ion-tabs>
+          <div class="home">
+
+          <ion-tab title-center="Trang chủ" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/home">
+            <ion-nav-view name="tab-home"></ion-nav-view>
+          </ion-tab>
+
+       
+          <ion-tab title-center="Địa điểm" icon-off="ion-ios-location-outline" icon-on="ion-ios-location" href="#/tab/QuanAn">
+            <ion-nav-view name="tab-QuanAn"></ion-nav-view>
+          </ion-tab>
+          </div>
+
+      </ion-tabs>
+             
+  </ion-side-menu-content>
+
+           <!-- Side Menu (trái) -->
+
+  <ion-side-menu side="left">
+      <ion-pane class="background-grey">
+        
+        <ion-header-bar class="bar-stable">
+          <h1 class="title">Food</h1>
+        </ion-header-bar>
+      
+        <ion-content>
+          <ion-list> 
+            <div class="row menu-top">
+              <div class="col col-center">
+                <img class="profile-image" src="img/face.jpg" animate-ratio="fadeIn" />
+              </div>
+          </div>
+          
+              <ion-item menu-close href="#/tab/like">Yêu thích</ion-item>
+              <ion-item menu-close href="#/tab/about">Thông tin ứng dụng</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-pane>
+  </ion-side-menu>
+
+</ion-side-menus>
+
+   

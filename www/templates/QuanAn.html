@@ -1,0 +1,23 @@
+<ion-view view-title="Địa điểm ">
+      
+      <ion-content class="QuanAn">
+      <div ng-controller="QuanAnCtrl">
+      <div class="list list-inset form-rb">
+         <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+             <input type="text" class="text-color-contrast" ng-model="searchTextQuanAn" placeholder="Xin chào? Bạn muốn ăn ở đâu?">
+
+         </label>
+       </div>
+        
+        <div >
+
+    		<a  ng-repeat="pub in pubs|filter:searchText"  class="button button-full " href={{pub.href}} >
+  			<img ng-src={{pub.image}} >
+    		<div class="bottomleft" > {{pub.name}}</div>
+    		</a> 
+    	</div>
+      </div>
+
+     </ion-content>
+ </ion-view>
